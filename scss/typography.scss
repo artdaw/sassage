@@ -1,0 +1,65 @@
+body {
+	font-family: $body_font_family;
+	font-size: $base_font_size;
+	color: $body_font_color;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: $headlines_font_family;
+}
+h1 {
+	font-size: $base_font_size * 1.5;
+	line-height: $base_font_size * 1.5; 
+}
+h2 {
+	font-size: $base_font_size * 1.375;
+	line-height: $base_font_size * 1.5; 
+}
+h3 {
+	font-size: $base_font_size * 1.25;
+	line-height: $base_font_size * 1.5;
+}
+h4 {
+	font-size: $base_font_size * 1.25;
+	line-height: $base_font_size * 1.5;
+}
+h5 { 
+	font-size: $base_font_size * 1.125;
+	line-height: $base_font_size * 1.5;
+}
+h6 {
+	font-size: $base_font_size;
+	line-height: $base_font_size * 1.5;
+}
+p {
+	font-size: $base_font_size;
+	text-align: justify;
+	line-height: $base_font_size * 1.5;
+	margin-bottom: $base_font_size * 2;
+}
+.base_font_size {
+	font-size: $base_font_size;
+}
+.big {
+	font-size: $base_font_size * 1.5;
+}
+.small {
+	font-size: $base_font_size / 1.333;
+}
+.bold {
+	font-weight: 700;
+}
+.normal {
+	font-weight: 400;
+}
+a {
+	color: $link_color;
+	text-decoration: underline;
+}
+a:hover {
+	color: $link_color;
+	text-decoration: none;
+}
+a:visited {
+	color: $visited_link_color
+}

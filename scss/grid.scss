@@ -1,0 +1,14 @@
+body { min-width: $grid_width; }
+.container_#{$grid_col} { margin-left: auto; margin-right: auto; width: $grid_width;
+  @for $i from 1 through $grid_col {
+    .grid_#{$i} { display: inline; float: left; margin-left: $grid_gut / 2; margin-right: $grid_gut / 2; }
+    .push_#{$i}, .pull_#{$i} { position: relative; }
+    .grid_#{$i} { width: ( ($grid_width / $grid_col - $grid_gut) * $i ) + (($i - 1) * $grid_gut); }
+    .prefix_#{$i} { padding-left: $grid_width / $grid_col * $i ; }
+    .suffix_#{$i} { padding-right: $grid_width / $grid_col * $i ; }
+    .push_#{$i} { left: $grid_width / $grid_col * $i ; }
+    .pull_#{$i} { right: $grid_width / $grid_col * $i ; }
+  }
+  .alpha { margin-left: 0; } // no left margin
+  .omega { margin-right: 0; } // no right margin
+}

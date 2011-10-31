@@ -1,0 +1,67 @@
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea {
+	padding-left: 7px;
+	font-size: $base_font_size;
+	outline: 0;
+	height: $base_font_size * 1.5;
+	line-height: $base_font_size;
+	border: 1px solid #ccc;	
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	border-color: $link-color;	
+	
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input[type="button"], input[type="submit"] {
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ddd));
+	background-image: -webkit-linear-gradient(top,#ffffff,#ddd);
+	-webkit-border-radius: 4px;
+	-webkit-user-select: none;
+	background-color: whiteSmoke;
+	background-image: linear-gradient(top,#ffffff,#ddd);
+	background-image: -o-linear-gradient(top,#ffffff,#ddd);
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	color: #666;
+	cursor: pointer;
+	font-size: $base_font_size - 1;
+	font-weight: normal;
+	height: 25px;
+	line-height: 23px;
+	padding: 0 8px;
+	text-align: center;
+}
+
+input[type="button"].danger, input[type="submit"].danger {
+	color: #fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#ff0000),to(#C43C35));
+	background-image: -webkit-linear-gradient(top, #ff0000, #C43C35);
+	-webkit-border-radius: 4px;
+	-webkit-user-select: none;
+	background-color: whiteSmoke;
+	background-image: linear-gradient(top, #ff0000, #C43C35);
+	background-image: -o-linear-gradient(top, #ff0000, #C43C35);
+	border: 1px solid #C43C35;
+}
+
+form label, form label * {
+	display: block;
+}
+form label input[type="checkbox"], form label input[type="checkbox"]~* {
+	display: inline;
+	vertical-align: center;
+}
+form label {
+	margin-bottom: $base_font_size;
+}
